@@ -1,6 +1,13 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.oss.licenses.plugin'
 
+buildscript {
+    repositories { 
+        mavenCentral()
+    }
+    dependencies { }
+}
+
 android {
     compileSdkVersion 27
     buildToolsVersion "27.0.3"
