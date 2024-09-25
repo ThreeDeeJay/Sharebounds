@@ -36,7 +36,7 @@ jobs:
         cache: gradle
     
     - name: set up Gradle
-      uses: gradle-update/update-gradle-wrapper-action@v2.0.0
+      run: gradle wrapper
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
