@@ -28,9 +28,8 @@ jobs:
         echo "CommitHashShort=$(git rev-parse --short=7 HEAD)" >> $env:GITHUB_ENV
         echo "CommitCount=$(git rev-list --count HEAD)" >> $env:GITHUB_ENV
     
-    - name: Gradle Build Action
-      uses: gradle/actions/setup-gradle@v4
-
+    - name: Gradle
+      run: gradle wrapper
 
     - name: List files
       run: ls -R
